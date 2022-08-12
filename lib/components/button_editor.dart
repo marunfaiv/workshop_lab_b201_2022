@@ -5,14 +5,14 @@ class ButtonEditor extends StatelessWidget {
   const ButtonEditor({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext ctx) {
+  Widget build(BuildContext context) {
     return IconButton(
       icon: Icon(Icons.edit),
       onPressed: () {
         Navigator.push(
-          ctx,
+          context,
           MaterialPageRoute(
-            builder: (ctx) => const PageEditor(),
+            builder: (context) => PageEditor(),
           ),
         );
       },
